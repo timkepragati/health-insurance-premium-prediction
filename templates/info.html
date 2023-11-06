@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Health Insurance Premium Prediction</title>
+</head>
+<body>
+
+<h2><b>Predict Health Insurance Premium From Information</b2></h2>
+<form method="POST" action="/predict">
+
+    <label for="name"><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name" id="name" name="name" required><br><br>
+
+    <label for="age"><b>Age</b></label><br>
+    <input type="number" placeholder="Enter Age" id="age" name="age" required><br><br>
+
+    <label for="gender"><b>Select Gender</b></label><br>
+    <input type="radio" id="male" name="gender" value="male"> 
+    <label for="male">Male</label> <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label> <br><br>
+
+    <label for="bmi"><b>BMI</b></label><br>
+    <input type="number" placeholder="Enter Body Mass Index" id="bmi" name="bmi" required><br><br>
+
+    <label for="children"><b>No of Children</b></label><br>
+    <input type="number" placeholder="Enter No. of Children" id="children" name="children" required><br><br>
+
+    <label for="smoker"><b>Are you a Smoker?</b></label><br> 
+    <input type="radio" id="yes" name="smoker" value="yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="no" name="smoker" value="no">
+    <label for="no">No</label><br><br>
+    
+    <label for="region"><b>Region</b></label><br>
+<select name="region" required>
+    <option value="0">Southwest</option>
+    <option value="1">Southeast</option>
+    <option value="2">Northwest</option>
+    <option value="3">Northeast</option>
+</select><br><br>
+
+    <button type="submit">Predict Premium</button>
+
+</form>
+</body>
+</html>
